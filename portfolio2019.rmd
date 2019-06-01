@@ -1,0 +1,112 @@
+---
+title: "Derek Sollberger"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+```
+
+Cover Letter
+================================================================================
+
+Column {data-width=500}
+-------------------------------------
+
+[write letter]
+
+Column {data-width=500}
+-------------------------------------
+
+### Students Taught
+
+```{r}
+valueBox(1337, icon = "fa-university")
+```
+
+### Teacher Rating
+
+```{r}
+weighted_teaching_rating <- 6.3
+gauge(weighted_teaching_rating, min = 0, max = 7, gaugeSectors(
+  success = c(5, 7), warning = c(4, 5), danger = c(0, 5)
+))
+```
+
+### Teaching Assistants Supervised
+
+```{r}
+valueBox(42, icon = "fa-handshake")
+```
+
+Timeline
+================================================================================
+
+Column {data-width=500}
+-------------------------------------
+
+### Summer 2016
+
+* Math 15
+* Math 18
+
+### Fall 2016
+
+* Math 5
+* Math 15
+
+### Spring 2017
+
+* Math 15
+* Math 32
+
+### Summer 2017
+
+* Math 11
+* Math 15
+
+### Fall 2017
+
+* Math 15
+* Math 18
+
+### Spring 2018
+
+* Bio 18
+* Math 15
+
+### Fall 2018
+
+* Bio 18
+* Math 15
+
+### Spring 2019
+
+* Bio 18
+* Bio 184
+* Math 181
+
+
+Math 15
+================================================================================
+
+Bio 18
+================================================================================
+
+Bio 184
+================================================================================
+
+Math 181
+================================================================================
+
+Service
+================================================================================
+
+Affilations
+================================================================================
+
+Miscellaneous
+================================================================================
